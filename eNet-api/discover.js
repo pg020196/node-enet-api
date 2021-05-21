@@ -79,7 +79,7 @@ discover.prototype.discover = function(callback) {
         }
     }.bind(this));
 
-    var message = new Buffer(DISCOVERY_PAYLOAD_MSG);
+    var message = new Buffer.from(DISCOVERY_PAYLOAD_MSG);
 
     var count = 0;
     var iVal;
